@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#10100d">
+  <title>Happy Birthday, Mrs Toyin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       CUSTOMIZE THIS SECTION FOR EACH CLIENT
+       ========================================================= -->
+  <script>
+    const CONFIG = {
+      name: "Aunty Toyin",
+      senderName: "From AOLG Junior Staff",
+
+      greeting: "Happy Birthday, Aunty Toyin! 🎉",
+
+      introMessage:
+        "Today is a special opportunity to celebrate you, " +
+        "your leadership, your kindness, and the positive impact " +
+        "you have on the people around you.",
+
+      birthdayMessage:
+        "Wishing you a wonderful birthday and a new year filled " +
+        "with happiness, good health, success and many memorable moments. " +
+        "Thank you for your guidance, encouragement and everything you do. " +
+        "May the year ahead bring you even greater achievements and joy.",
+
+      photos: [
+        "media/photo1.jpg",
+        "media/photo2.jpg",
+        "media/photo3.jpg"
+      ],
+
+      videos: ["media/video1.mp4", "media/video2.mp4"],
+
+      // Optional background music.
+      // Use music you have permission to use.
+      music: "",
+
+      accent: "#d6ad55"
+    };
+  </script>
+
+  <main>
+
+    <!-- Opening -->
+    <section id="intro" class="intro">
+      <div class="gold-mark">✦</div>
+      <p class="opening-label">A SPECIAL MESSAGE</p>
+      <h1>For <span id="openingName"></span></h1>
+      <p class="opening-subtitle">Celebrating a remarkable person.</p>
+    </section>
+
+    <!-- Welcome -->
+    <section id="welcome" class="welcome hidden">
+      <div class="decor">✦ ───── ✦</div>
+
+      <div class="portrait" id="portrait">
+        <img id="portraitImg" src="media/photo1.jpg" alt="Aunty Toyin">
+      </div>
+
+      <p class="opening-label">TODAY WE CELEBRATE YOU</p>
+      <h2 id="welcomeGreeting"></h2>
+      <p class="welcome-text">
+        A small birthday surprise prepared especially for you.
+      </p>
+
+      <button id="openButton" class="main-button">
+        Open your message
+      </button>
+    </section>
+
+    <!-- Main page -->
+    <section id="home" class="home hidden">
+
+      <header class="topbar">
+        <span class="monogram">T</span>
+        <div>
+          <small>WITH BEST WISHES</small>
+          <strong id="topName"></strong>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="opening-label">A DAY WORTH CELEBRATING</p>
+          <h2 id="heroGreeting"></h2>
+          <p id="heroMessage"></p>
+
+          <button id="viewMemories" class="main-button">
+            View memories
+          </button>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="message-card">
+        <div class="ornament">✦</div>
+        <p class="opening-label">A BIRTHDAY MESSAGE</p>
+        <h2>Dear Mrs Toyin,</h2>
+        <p id="birthdayMessage"></p>
+        <div class="signature">
+          With warmest wishes,<br>
+          <strong id="sender"></strong>
+        </div>
+      </section>
+
+      <!-- Qualities -->
+      <section class="qualities">
+        <div class="quality">
+          <span>✦</span>
+          <strong>Leadership</strong>
+          <p>Thank you for the example you set.</p>
+        </div>
+
+        <div class="quality">
+          <span>♡</span>
+          <strong>Kindness</strong>
+          <p>Your support and encouragement matter.</p>
+        </div>
+
+        <div class="quality">
+          <span>★</span>
+          <strong>Impact</strong>
+          <p>Your work continues to make a difference.</p>
+        </div>
+      </section>
+
+      <!-- Memories -->
+      <section id="memories" class="section">
+        <div class="section-heading">
+          <p class="opening-label">SPECIAL MOMENTS</p>
+          <h2>Memories</h2>
+        </div>
+
+        <div class="photo-grid" id="photoGrid"></div>
+      </section>
+
+      <!-- Video -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="opening-label">A LITTLE SOMETHING FOR YOU</p>
+          <h2>Birthday video</h2>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-shell">
+              <video id="birthdayVideo1" controls playsinline preload="metadata"></video>
+              <button class="fullscreen-button" type="button" aria-label="Open video fullscreen">⛶</button>
+            </div>
+            <div class="video-label">A special moment</div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-shell">
+              <video id="birthdayVideo2" controls playsinline preload="metadata"></video>
+              <button class="fullscreen-button" type="button" aria-label="Open video fullscreen">⛶</button>
+            </div>
+            <div class="video-label">Another memory</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing -->
+      <section class="closing">
+        <div class="gold-mark">✦</div>
+        <h2>Wishing you many more wonderful years ahead.</h2>
+        <p>
+          May this new chapter bring you continued success,
+          happiness and countless reasons to smile.
+        </p>
+        <div class="closing-line">— With appreciation and best wishes —</div>
+      </section>
+
+      <footer>
+        A birthday felicitation to <span id="footerName"></span>
+      </footer>
+
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
